@@ -32,34 +32,31 @@ public class GameData
 public class NetworkingManager : MonoBehaviour
 {
 
-    [SerializeField] private GameData test;
-
-    public void tx_gamedata(GameData data)
+    public byte[] GameDataToBytes(GameData data)
     {
-        byte[] bytes = data.ConvertToByteArray();
-        Debug.Log($"Sending {bytes.Length} bytes");
-        
-        GameData outstest = new GameData();
-        outstest.ConvertFromByteArray(bytes);
-        Debug.Log($"Received {outstest.name}");
+        byte[] buffer = data.ConvertToByteArray();
+        Debug.Log($"Converted: encoded {buffer.Length} bytes");
+        return buffer;
+    }
+
+    public GameData BytesToGameData(byte[] bytes)
+    {
+        GameData buffer = new GameData();
+        buffer.ConvertFromByteArray(bytes);
+        Debug.Log($"Converted: decoded - {buffer.name}");
+        return buffer;
     }
 
     void Awake()
     {
-        if (test == null)
-        {
-            test = new GameData();
-            test.name = "Test Hello This is a test!!";
-            // Initialize the properties of test here if necessary
-        }
+
     }
 
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Test send");
-        tx_gamedata(test);
+
     }
 
     // Update is called once per frame

@@ -1,0 +1,6 @@
+C:\Users\const\Documents\networkingPracticalMidterm\Server\GameServer\MultiUserClient\bin\Debug\MultiUserClient.exe.config
+C:\Users\const\Documents\networkingPracticalMidterm\Server\GameServer\MultiUserClient\bin\Debug\MultiUserClient.exe
+C:\Users\const\Documents\networkingPracticalMidterm\Server\GameServer\MultiUserClient\bin\Debug\MultiUserClient.pdb
+C:\Users\const\Documents\networkingPracticalMidterm\Server\GameServer\MultiUserClient\obj\Debug\MultiUserClient.csproj.CoreCompileInputs.cache
+C:\Users\const\Documents\networkingPracticalMidterm\Server\GameServer\MultiUserClient\obj\Debug\MultiUserClient.exe
+C:\Users\const\Documents\networkingPracticalMidterm\Server\GameServer\MultiUserClient\obj\Debug\MultiUserClient.pdb
