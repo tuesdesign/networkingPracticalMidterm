@@ -1,0 +1,7 @@
+C:\Users\const\source\repos\NetMidtermServer\NetMidtermServer\bin\Debug\NetMidtermServer.exe.config
+C:\Users\const\source\repos\NetMidtermServer\NetMidtermServer\bin\Debug\NetMidtermServer.exe
+C:\Users\const\source\repos\NetMidtermServer\NetMidtermServer\bin\Debug\NetMidtermServer.pdb
+C:\Users\const\source\repos\NetMidtermServer\NetMidtermServer\obj\Debug\NetMidtermServer.csproj.AssemblyReference.cache
+C:\Users\const\source\repos\NetMidtermServer\NetMidtermServer\obj\Debug\NetMidtermServer.csproj.CoreCompileInputs.cache
+C:\Users\const\source\repos\NetMidtermServer\NetMidtermServer\obj\Debug\NetMidtermServer.exe
+C:\Users\const\source\repos\NetMidtermServer\NetMidtermServer\obj\Debug\NetMidtermServer.pdb
