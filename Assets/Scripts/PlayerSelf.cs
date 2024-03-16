@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerSelf : MonoBehaviour
 {
     [SerializeField] public GameData playerSelfData;
+    public NetworkingManager networkingManager;
 
     private void Awake()
     {
@@ -12,9 +13,9 @@ public class PlayerSelf : MonoBehaviour
         {
             playerSelfData.color = Color.white;
         }
-        if (playerSelfData.trans == null)
+        if (playerSelfData.pos == null)
         {
-            playerSelfData.trans = gameObject.transform;
+            playerSelfData.pos = gameObject.transform.position;
         }
         if (playerSelfData.name == null)
         {
@@ -32,6 +33,9 @@ public class PlayerSelf : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        playerSelfData.pos = gameObject.transform.position;
+        playerSelfData.color = gameObject.GetComponent<Renderer>().material.color;
+        playerSelfData.name = gameObject.name;
+        networkingManager.ThisUser = playerSelfData;
     }
 }

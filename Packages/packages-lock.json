@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.pimdewitte.unitymainthreaddispatcher": {
+      "version": "file:C:/Users/const/Downloads/UnityMainThreadDispatcher-master",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.collab-proxy": {
       "version": "1.17.2",
       "depth": 0,

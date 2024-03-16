@@ -29,6 +29,17 @@ namespace GameServer
         public static void StartUDP()
         {
             byte[] buffer = new byte[1024];
+            
+            UdpClient udpClient = new UdpClient(UDP_Port);
+            while (true)
+            {
+                // Receive data
+                UdpReceiveResult result = await udpClient.ReceiveAsync();
+                byte[] receivedBytes = result.Buffer;
+
+                // Send data back
+                await udpClient.SendAsync(receivedBytes, receivedBytes.Length, result.RemoteEndPoint);
+            }
         }
     }
 }
